@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bootstrap3 %}
+<link href='{% static "css/postform.css" %}' type="css" rel="Stylesheet" />
+{% block content %}
+
+<div class="container" style="color:rgb(16, 173, 240);background-color:rgb(30, 17, 202)">
+    <div class="jumbotron" >
+        <form  method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <br>
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
+    </div>
+</div>
+    {% endblock %}
+
+
+   
