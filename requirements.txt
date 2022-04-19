@@ -1,0 +1,5 @@
+django
+pillow
+six
+requests
+django-bootstrap
